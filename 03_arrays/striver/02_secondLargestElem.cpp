@@ -5,7 +5,7 @@ using namespace std;
 
 // Function to get the second largest and second smallest elements
 vector<int> getSecondOrderElements(int n, vector<int> a) {
-    vector<int> result; // Create a vector to store the results
+    vector<int> result; 
 
     sort(a.begin(), a.end()); // Sort the input vector in ascending order
 
