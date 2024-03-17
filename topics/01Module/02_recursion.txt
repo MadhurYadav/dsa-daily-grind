@@ -1,0 +1,24 @@
+Recursion!
+
+Part 01: (08Qs)
+
+    i. Fundamentals (Single Branch, Tree Diagram, Stack Diagram)
+    ii. Pass by Refrence
+    iii. Print from 1 to N
+    iv. Distinct Paths
+    v. Letter Combinations
+    vi. All subset of a set 
+
+
+Part 02: (06Qs)
+
+    i.  Divide & Conquer
+    ii. Fast Exponentiation
+    iii. Balanced Parantheses
+
+
+Part 03: (06Qs)
+
+    i. Lexicographic Subsets
+    ii. Subset Sum
+

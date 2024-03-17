@@ -1,0 +1,23 @@
+Bits Manipulation!
+
+
+Part 01: (06Qs)
+
+i. Bitwise Operators
+ii. Count of set Bits
+iii. Cumulative Bitwise AND
+
+
+Part 02: (07Qs)
+
+i. Detecting odd one out
+ii. Hamming Distaces
+iii. Bitwise OR of subarrays
+
+
+Part 03: (08Qs)
+
+i. Finding Minimum XOR
+ii. Multiple XOR queries
+iii. Pair with given XOR
+iv. Find Two Elements

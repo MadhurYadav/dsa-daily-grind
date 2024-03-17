@@ -1,0 +1,26 @@
+Dynamic Array!
+
+Part 01: (10Qs)
+
+    i. Fundamental Concepts
+    ii. Pre-computation Techniques
+    iii. Slinding Window Technique
+    iv. Reverse Lookup (1D, 2D)
+    v. Processing Queries Efficiently
+    vi. Special Searching Problem
+
+
+Part 02: (08Qs)
+
+    i. Max Gap Problem: Bucketing
+    ii. Array Rearrangement
+
+
+Part 03: (08Qs)
+
+    i. Maximixe the Expression
+    ii. Histogram Problem
+    iii. Max Chunks
+    iv. Rotate the Array
+
+

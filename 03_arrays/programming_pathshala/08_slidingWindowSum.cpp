@@ -14,20 +14,21 @@ int main() {
     }
 
     // Logic
-    // Calculating the sum of the first window of size K - 1
+    // Calculating the sum of the first window of size K
     int sum = 0;
-    for (int i = 0; i < k - 1; i++) {
+    for (int i = 0; i < k; i++) {
         sum += arr[i];
     }
 
+    // Print the sum of the first window
+    cout << sum << " ";
+
     // Calculating the sum of subsequent windows
-    for (int i = k - 1; i < N; i++) {
-        cout << sum; // Print the sum of the current window
+    for (int i = k; i < N; i++) {
         sum += arr[i]; // Add the current element to the sum
         sum -= arr[i - k]; // Subtract the element at the beginning of the previous window from the sum
+        cout << sum << " "; // Print the sum of the current window
     }
-
-    cout << sum; // Print the sum of the last window
 
     return 0;
 }

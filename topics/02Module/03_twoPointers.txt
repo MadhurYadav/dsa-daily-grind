@@ -1,0 +1,27 @@
+Two Pointers!
+
+Part 01: (09Qs)
+
+i. Pair Sum
+ii Pair Difference
+
+
+Part 02: (06Qs)
+
+i. Subarray Sum
+ii. Triplet Sum
+iii. Quadruplet Sum
+iv. Distinct Rectangles
+
+
+Part 03: (08Qs)
+
+i. Longest Substring without repetition
+ii. Smallest Substring with all characters
+
+
+Part 04: (02Qs)
+
+i. Minimize the Expression
+Specific Prime Factorization
+

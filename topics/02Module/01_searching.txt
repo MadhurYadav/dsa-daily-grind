@@ -1,0 +1,29 @@
+Searching!
+
+Part 01: (07Qs)
+
+i. Binary Search & Fundamentals
+ii. Fist & Last Occurrence
+
+
+Part 02: (07Qs)
+
+i. Sorted Rotated Array
+ii. Repeated Element
+iii. Single Element
+
+
+Part 03: (07Qs)
+
+i. Monotonic Functions
+ii. Square Root
+iii. Kth Smallest in Array
+iv. Kth Smallest in Matrix
+
+
+Part 04: (11Qs)
+
+i. Maximize K
+ii. Place the Cows
+iii. Allocate the Books
+iv. Smallest Good Base
