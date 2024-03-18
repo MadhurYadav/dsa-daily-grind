@@ -1,5 +1,39 @@
 #include <iostream>
 #include <vector>
+using namespace std;
+
+int main() {
+    int rows, columns;
+    cin >> rows >> columns;
+    
+    vector<vector<int>> vec(rows, vector<int>(columns));
+    
+    for(int i = 0; i < rows; i++) {
+        for(int j = 0; j < columns; j++) {
+            cin >> vec[i][j];
+        }
+    }
+    
+    // Calculate sum of submatrices
+    long long ans = 0;
+    long long m = 1000000007;
+    for(int i = 0; i < rows; i++) {
+        for(int j = 0; j < columns; j++) {  // Adjusted loop bounds
+            // Contribution formula used:
+            // Number of choices for top left: (i + 1) * (j + 1)
+            // Number of choices for bottom right: (rows - i) * (columns - j)
+            ans += (vec[i][j] % m * (i + 1) % m * (j + 1) % m * (rows - i) % m * (columns - j) % m) % m;
+        }
+    }
+    
+    cout << ans;
+    return 0;
+}
+
+/*
+
+#include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -25,3 +59,6 @@ int main() {
     cout << sumOfSubMatrices(arr) << endl;
     return 0;
 }
+
+*/
+

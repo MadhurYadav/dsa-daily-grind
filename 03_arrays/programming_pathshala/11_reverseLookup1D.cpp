@@ -1,32 +1,47 @@
 #include <iostream>
-#include <limits.h>
-
 using namespace std;
 
+// int getSum(int i, int j, int arr[]){
+//     int sum = 0;
+//     for(int pt = i; pt<=j; pt++){
+//         sum += arr[pt];
+//     }
+//     return sum;
+// }
+
 int main() {
-    int n;
-    cin >> n; // Read the value of 'n' from the user
-
-    int a[n]; // Declare an array 'a' of size 'n'
-
-    for (int i = 0; i < n; i++) {
-        cin >> a[i]; // Read 'n' integers and store them in the array 'a'
+    int size = 3;
+    int arr[size] = {1,2,3};
+    // int ans = 0;
+    
+    //M1 --- TC - O(N^3), SC - O(1)
+    // for(int i=0; i<size; i++){
+    //     for(int j=i; j<size; j++){
+    //         ans += getSum(i,j,arr);
+    //     }
+    // }
+    
+    
+    //M2 --- TC - O(N^2), SC - O(1)
+    // for(int i=0; i<size; i++){
+    //     int sum = 0;
+    //     for(int j=i; j<size; j++){
+    //         sum += arr[j];
+    //         ans += sum;
+    //     }
+    // }
+    
+    
+    //M3 --- TC - O(N), SC - O(1)
+    long long m = 1000000007; // to avoid overflow
+    long long ans  = 0;
+    for(int i=0; i<size; i++){
+        // contribution of current element
+        long long currContribution = ((i + 1) % m * (size - i) % m * arr[i] % m) % m;
+        
+        ans = ((ans % m) + (currContribution % m)) % m;
     }
-
-    long long m = 1e9 + 7; // Declare a variable 'm' with value 1e9 + 7 (1000000007)
-    long long ans = 0; // Initialize the 'ans' variable as 0
-
-    for (int i = 0; i < n; i++) {
-        // Calculate the contribution for the current element
-        long long contri = (((i + 1) % m * (n - i) % m) % m * a[i] % m) % m;
-
-        ans = (ans % m + contri % m) % m; // Add the contribution to 'ans' (mod m)
-    }
-
-    cout << ans; // Print the final value of 'ans'
-
+    
+    cout<<ans;
     return 0;
 }
-
-// 1e9 + 7 as the value for m ensures that the calculations remain within a reasonable range 
-// and reduces the risk of numerical issues such as overflow or loss of precision.
