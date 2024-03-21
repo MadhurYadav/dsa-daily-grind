@@ -21,3 +21,6 @@ i. Finding Minimum XOR
 ii. Multiple XOR queries
 iii. Pair with given XOR
 iv. Find Two Elements
+
+
+IMP - BITMASKING! (Rec - Subsets)
